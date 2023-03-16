@@ -1,0 +1,7 @@
+@use '../mixins';
+@use '../variaveis.scss';
+
+#aside {
+    border: 1px solid green;
+    width: variaveis.$col * 4;
+}

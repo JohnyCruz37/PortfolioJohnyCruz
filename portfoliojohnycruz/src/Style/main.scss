@@ -1,0 +1,30 @@
+@use 'variaveis';
+@use 'mixins';
+
+
+// DEFINIÇÃO DE FORMATOS POR TAG
+
+h1 {
+    @include mixins.font('h1', 4em, capitalize);
+}
+
+h2 {
+    @include mixins.font('subtitulo', 2em, capitalize)
+}
+
+h3 {
+    @include mixins.font('subtitulo', 1.2em, none)
+}
+
+h6 {
+    @include mixins.font('subtitulo', .8em, uppercase)
+}
+
+p {
+    @include mixins.font('subtitulo', .9em, none)
+}
+
+a,
+svg {
+    transition: .4s;
+}

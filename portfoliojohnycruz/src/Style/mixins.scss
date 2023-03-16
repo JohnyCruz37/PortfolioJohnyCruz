@@ -1,0 +1,8 @@
+@use 'variaveis';
+
+@mixin font($font, $tamanho, $transform){
+    font-family: $font;
+    font-size: $tamanho;
+    text-transform: $transform;  
+}
+

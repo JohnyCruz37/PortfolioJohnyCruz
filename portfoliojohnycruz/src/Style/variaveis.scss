@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'h1';
+    src: url(../fonts/AlexBrush-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'subtitulo';
+    src: url(../fonts/Aller-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'texto';
+    src: url(../fonts/Aller-Light.ttf);
+}
+
+// FONTS
+$h1: 'h1';
+$subtitulo: 'subtitulo';
+$texto: 'texto';
+$col: 8.3333%;
+
+// CORES
+$bg-page: linear-gradient(135deg, #386522 0%, #001e0a 100%);

@@ -11,7 +11,7 @@ const SecaoTec = () => {
     return (
         <section id='tecnologia'>
             <TituloSecao texto={"tecnologias"} />
-            <article className='tecnoligia-cards'>
+            <article className='tecnologia-cards'>
                 
                 <Card
                     icone={<AiOutlineHtml5/>}

@@ -9,22 +9,35 @@ h1 {
 }
 
 h2 {
-    @include mixins.font('subtitulo', 2em, capitalize)
+    @include mixins.font('subtitulo', 2em, capitalize);
 }
 
 h3 {
-    @include mixins.font('subtitulo', 1.2em, none)
+    @include mixins.font('subtitulo', 1.2em, none);
 }
 
 h6 {
-    @include mixins.font('subtitulo', .8em, uppercase)
+    @include mixins.font('subtitulo', .8em, uppercase);
 }
 
 p {
-    @include mixins.font('subtitulo', .9em, none)
+    @include mixins.font('subtitulo', .9em, none);
+    text-align: justify;
 }
 
 a,
 svg {
     transition: .4s;
 }
+
+header, section, main, aside, article{
+    border-radius: .5em;
+    padding: .5em;
+    border: 1px solid;
+}
+
+
+// IDENTAÇÃO DO INÍCO DO PARÁGRAFO
+#sobre p, #tecnologia p, #projetos p{
+    text-indent: 1em;
+} 

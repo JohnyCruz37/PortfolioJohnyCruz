@@ -2,7 +2,7 @@
 @use '../variaveis.scss';
 
 #header {
-    border: 1px solid yellow;
     width: variaveis.$col * 12;
-    height: 150px;
+    text-align: center;
+
 }

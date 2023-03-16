@@ -2,6 +2,5 @@
 @use '../variaveis.scss';
 
 #main-container {
-    border: 1px solid red;
-    width: variaveis.$col * 7.5;
+    width: calc(variaveis.$col * 7.5);
 }

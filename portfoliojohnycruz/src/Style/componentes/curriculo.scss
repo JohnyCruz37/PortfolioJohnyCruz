@@ -1,14 +1,14 @@
 @use '../variaveis.scss';
 @use '../mixins.scss';
 
-#curriculo{
+#curriculo {
     width: variaveis.$col * 12;
-    height: 100vh;
-    
+    height: auto;
+
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
     padding: calc(variaveis.$col / 2);
-    row-gap: calc(variaveis.$col);
+    row-gap: calc(variaveis.$col / 2);
     column-gap: calc(variaveis.$col / 2);
 }

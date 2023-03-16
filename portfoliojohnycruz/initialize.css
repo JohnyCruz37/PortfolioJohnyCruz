@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+
+/* FONTS */
+h1, h2, h3, h4, h5, h6, p{
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* CONTAINERS */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/* LISTS */
+ol, ul {
+    list-style: none;
+}

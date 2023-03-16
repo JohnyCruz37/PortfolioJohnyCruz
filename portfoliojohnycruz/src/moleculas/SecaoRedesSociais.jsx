@@ -1,5 +1,6 @@
 import React from 'react';
 import { SlSocialInstagram, SlSocialLinkedin, SlSocialGithub } from 'react-icons/sl';
+import { SiWhatsapp } from 'react-icons/si';
 
 import '../Style/moleculas/SecaoRedesSociais.scss'
 
@@ -8,9 +9,10 @@ const SecaoRedesSociais = () => {
         <section id='rede-sociais'>
             <p> desenvolvedor web </p>
             <article className='icones-sociais'>
-                <SlSocialLinkedin />
-                <SlSocialInstagram />
-                <SlSocialGithub />
+                <i> <SlSocialLinkedin /></i>
+                <i> <SlSocialInstagram /> </i>
+                <i> <SlSocialGithub /> </i>
+                <i> <SiWhatsapp /> </i>
             </article>
         </section>
     )

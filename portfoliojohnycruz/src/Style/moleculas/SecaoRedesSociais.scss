@@ -1,0 +1,36 @@
+@use '../mixins.scss';
+@use '../variaveis.scss';
+
+#rede-sociais {
+    width: 100%;
+    margin-top: 14em;
+
+    p {
+        background-color: #ddd;
+        width: 60%;
+        padding: .8em 1.2em;
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    .icones-sociais {
+        border: 1px solid;
+        padding: 1em 0;
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+
+        font-size: 2em;
+
+        transition: .3s;
+
+        i:hover {
+            color: green;
+        }
+    }
+
+    .icones-sociais:hover {
+        transform: scale(1.1);
+    }
+}

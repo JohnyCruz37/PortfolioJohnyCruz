@@ -1,3 +1,9 @@
-.secao {
-    border: 1px solid brown;
+@use '../mixins.scss';
+@use '../variaveis.scss';
+
+#projetos {
+    @include mixins.flexRow();
+    p{
+        padding: .5em;
+    }
 }

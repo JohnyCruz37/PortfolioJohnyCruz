@@ -1,5 +1,7 @@
 import React from 'react';
 import {AiOutlineHtml5} from 'react-icons/ai';
+import {SiCss3, SiReact} from 'react-icons/si';
+import {IoLogoJavascript} from 'react-icons/io';
 
 import TituloSecao from '../atomo/TituloSecao';
 
@@ -16,22 +18,22 @@ const SecaoTec = () => {
                 <Card
                     icone={<AiOutlineHtml5/>}
                     titulo={'html'}
-                    texto={'ipson Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit omnis eligendi ab repudiandae laboriosam ut non at harum explicabo dolor est aut a voluptatum veritatis exercitationem corrupti, tempora possimus accusamus' }
+                    texto={'ipson Lorem ipsum dolor sit amet consectetur adipisicing elit.' }
                 />
                 <Card
-                    icone={<AiOutlineHtml5/>}
-                    titulo={'html'}
-                    texto={'ipson Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit omnis eligendi ab repudiandae laboriosam ut non at harum explicabo dolor est aut a voluptatum veritatis exercitationem corrupti, tempora possimus accusamus' }
+                    icone={<SiCss3/>}
+                    titulo={'css'}
+                    texto={'ipson Lorem ipsum dolor sit amet consectetur adipisicing elit.' }
                 />
                 <Card
-                    icone={<AiOutlineHtml5/>}
-                    titulo={'html'}
-                    texto={'ipson Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit omnis eligendi ab repudiandae laboriosam ut non at harum explicabo dolor est aut a voluptatum veritatis exercitationem corrupti, tempora possimus accusamus' }
+                    icone={<IoLogoJavascript/>}
+                    titulo={'js'}
+                    texto={'ipson Lorem ipsum dolor sit amet consectetur adipisicing elit.' }
                 />
                 <Card
-                    icone={<AiOutlineHtml5/>}
-                    titulo={'html'}
-                    texto={'ipson Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit omnis eligendi ab repudiandae laboriosam ut non at harum explicabo dolor est aut a voluptatum veritatis exercitationem corrupti, tempora possimus accusamus' }
+                    icone={<SiReact/>}
+                    titulo={'react'}
+                    texto={'ipson Lorem ipsum dolor sit amet consectetur adipisicing elit.' }
                 />
             </article>
         </section>

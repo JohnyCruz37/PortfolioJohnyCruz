@@ -2,7 +2,11 @@
 @use '../variaveis.scss';
 
 #header {
+    border-radius: .5em;
     width: variaveis.$col * 12;
+    padding: 1.5em;
+    
     text-align: center;
+
 
 }

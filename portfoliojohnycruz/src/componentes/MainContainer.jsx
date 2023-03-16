@@ -11,7 +11,6 @@ const MainContainer = () => {
             <SecaoSobre />
             <SecaoTec />
             <SecaoProjetos />
-            <button> <h6> ver projetos </h6> </button>
         </main>
 
     )

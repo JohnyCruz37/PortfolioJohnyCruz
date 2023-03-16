@@ -30,10 +30,8 @@ svg {
     transition: .4s;
 }
 
-header, section, main, aside, article{
-    border-radius: .5em;
-    padding: .5em;
-    border: 1px solid;
+main{
+    margin-top: calc(variaveis.$col / 2);
 }
 
 
@@ -41,3 +39,7 @@ header, section, main, aside, article{
 #sobre p, #tecnologia p, #projetos p{
     text-indent: 1em;
 } 
+
+header{
+    border: 1px solid;
+}

@@ -2,13 +2,12 @@
 @use '../mixins.scss';
 
 #curriculo {
-    width: variaveis.$col * 12;
-    height: auto;
+    @include mixins.flexRow();
+    background-color: #eee;
+    width: calc(variaveis.$col * 12);
+    min-height: 100wv;
 
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
     padding: calc(variaveis.$col / 2);
-    row-gap: calc(variaveis.$col / 2);
+    justify-content: flex-start;
     column-gap: calc(variaveis.$col / 2);
 }

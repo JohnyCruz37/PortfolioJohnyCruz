@@ -23,7 +23,6 @@ const SecaoContato = () => {
                 titulo={'Localizaçao'}
                 texto={'bom jesus dos perdões - sp - brasil'}
             />
-            <button> download currículo </button>
         </section>
     )
 }

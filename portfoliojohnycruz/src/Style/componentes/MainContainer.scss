@@ -2,5 +2,5 @@
 @use '../variaveis.scss';
 
 #main-container {
-    width: calc(variaveis.$col * 7.5);
+    flex: 2 1 0;
 }

@@ -2,39 +2,60 @@
 @use '../variaveis.scss';
 
 .card-tec {
-    @include mixins.flexRow();
-    justify-content: space-between;
     border: 1px solid green;
     border-radius: .5em;
     width: calc(variaveis.$col * 5.5);
     padding: .5em;
 
-    i {
-        width: 30%;
-        font-size: 6em;
+    display: flex;
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+    .card-tec-icone{
+        @include mixins.center();
 
-    div {
-        width: 70%;
+        i {
+            @include mixins.center();
 
-        h3 {
-            height: 30%;
-            margin-left: .5em;
-            display: block;
-            display: flex;
-            align-items: end;
-            text-transform: uppercase;
-
+            svg{
+                font-size: 4em;
+            } 
         }
 
-        p {
-            display: block;
-            padding: .5em;
+        #html{
+            svg{
+                color: #e44d26;
+            }
+        }
+        #css{
+            svg{
+                color: #1572b6;
+            }
+        }
+        #js{
+            svg{
+                color: #f0db4f;
+            }
+        }
+        #bt{
+            svg{
+                color: #7811f2;
+            }
+        }
+        #react{
+            svg{
+                color: #00d1f7;
+            }
+        }
+        #git{
+            svg{
+                color: #e94e31;
+            }
+        }
+    }
 
+    .card-tec-texto{
+        h3 {
+
+            text-transform: uppercase;
         }
     }
 

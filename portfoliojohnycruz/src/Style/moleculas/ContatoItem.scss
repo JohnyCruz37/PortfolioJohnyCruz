@@ -1,0 +1,36 @@
+@use '../mixins.scss';
+@use '../variaveis.scss';
+
+.card {
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    margin-bottom: .8em;
+    padding-bottom: .8em;
+
+    display: flex;
+    flex-direction: row ;
+
+
+
+
+    i {
+        border-radius: 5px;
+        background-color: #eee;
+        margin-right: .5em;
+        padding: .2em;
+
+        svg {
+            width: 2em;
+            height: 2em;
+        }
+    }
+
+    .card-info{
+        .info-titulo{
+            text-transform: uppercase;
+            margin-bottom: .5em;
+        }
+    }
+
+
+}

@@ -13,7 +13,7 @@ h2 {
 }
 
 h3 {
-    @include mixins.font('subtitulo', 1.2em, none);
+    @include mixins.font('subtitulo', 1em, none);
 }
 
 h6 {
@@ -34,12 +34,15 @@ main{
     margin-top: calc(variaveis.$col / 2);
 }
 
+button{
+    border-radius: 3em;
+    padding: 1em 1.2em;
+    text-decoration: none;
+    transition: .3s;
+}
+
 
 // IDENTAÇÃO DO INÍCO DO PARÁGRAFO
 #sobre p, #tecnologia p, #projetos p{
     text-indent: 1em;
 } 
-
-header{
-    border: 1px solid;
-}

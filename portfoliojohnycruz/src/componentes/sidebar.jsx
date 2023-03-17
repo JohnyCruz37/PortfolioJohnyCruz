@@ -7,12 +7,14 @@ import '../Style/componentes/Sidebar.scss'
 const Aside = () => {
     return (
         <aside id='aside'>
-
-            <img src="https://via.placeholder.com/250x300" alt="minha foto" />
+            <figure>
+                <img src="https://via.placeholder.com/250x300" alt="minha foto" />
+            </figure>
+            <p id='cargo'> desenvolvedor web </p>
             <SecaoRedesSociais />
             <SecaoContato />
 
-            <button> download currículo </button>
+            <button type='button'> <h6> download currículo </h6>  </button>
         </aside>
 
     )

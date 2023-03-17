@@ -1,42 +1,62 @@
 import React from 'react';
-import {AiOutlineHtml5} from 'react-icons/ai';
-import {SiCss3, SiReact} from 'react-icons/si';
-import {IoLogoJavascript} from 'react-icons/io';
+import { DiHtml5, DiCss3, DiBootstrap, DiJavascript, DiReact, DiGit } from 'react-icons/di';
 
 import TituloSecao from '../atomo/TituloSecao';
-
+import Card from './Cards';
 
 import '../Style/moleculas/SecaoTec.scss'
-import Card from './Cards';
+
+const tecnologiasLista = [
+    {
+        id: 'html',
+        nome: 'html5',
+        icone: <DiHtml5 />,
+    },
+    {
+        id: 'css',
+        nome: 'css3',
+        icone: <DiCss3 />,
+    },
+    {
+        id: 'js',
+        nome: 'JavaScript',
+        icone: <DiJavascript />,
+    },
+    {
+        id: 'bt',
+        nome: 'bootstrap',
+        icone: <DiBootstrap />,
+    },
+    {
+        id: 'react',
+        nome: 'react.js',
+        icone: <DiReact />,
+    },
+    {
+        id: 'git',
+        nome: 'git',
+        icone: <DiGit />,
+    }
+]
 
 const SecaoTec = () => {
     return (
         <section id='tecnologia'>
             <TituloSecao texto={"tecnologias"} />
             <article className='tecnologia-cards'>
-                
-                <Card
-                    icone={<AiOutlineHtml5/>}
-                    titulo={'html'}
-                    texto={'ipson Lorem ipsum dolor sit amet consectetur adipisicing elit.' }
-                />
-                <Card
-                    icone={<SiCss3/>}
-                    titulo={'css'}
-                    texto={'ipson Lorem ipsum dolor sit amet consectetur adipisicing elit.' }
-                />
-                <Card
-                    icone={<IoLogoJavascript/>}
-                    titulo={'js'}
-                    texto={'ipson Lorem ipsum dolor sit amet consectetur adipisicing elit.' }
-                />
-                <Card
-                    icone={<SiReact/>}
-                    titulo={'react'}
-                    texto={'ipson Lorem ipsum dolor sit amet consectetur adipisicing elit.' }
-                />
+                {
+                    tecnologiasLista.map((tec) => (
+
+                        <Card
+                            key={tec.id}
+                            id={tec.id}
+                            icone={tec.icone}
+                            titulo={tec.nome}
+                        />
+                    ))
+                }
             </article>
-        </section>
+        </section >
     )
 }
 

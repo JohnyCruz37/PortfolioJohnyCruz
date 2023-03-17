@@ -1,14 +1,15 @@
-import React from 'react';
 import SecaoContato from '../moleculas/SecaoContato';
 import SecaoRedesSociais from '../moleculas/SecaoRedesSociais';
 
 import '../Style/componentes/Sidebar.scss'
 
+import perfil from '../img/perfil.jpg'
+
 const Aside = () => {
     return (
         <aside id='aside'>
             <figure>
-                <img src="https://via.placeholder.com/250x300" alt="minha foto" />
+                <img src={perfil} alt="minha foto" />
             </figure>
             <p id='cargo'> desenvolvedor web </p>
             <SecaoRedesSociais />

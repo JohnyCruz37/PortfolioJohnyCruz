@@ -13,6 +13,9 @@
     src: url(../fonts/Aller-Light.ttf);
 }
 
+// VIEWPORT
+$viewport: 700px;
+
 // FONTS
 $h1: 'h1';
 $subtitulo: 'subtitulo';
@@ -20,3 +23,7 @@ $texto: 'texto';
 
 //GRID
 $col: 8.3333%;
+
+// CORES
+$shadow:  3px 3px 6px #11111140;
+$shadowInterno: inset 3px 3px 6px #11111140;

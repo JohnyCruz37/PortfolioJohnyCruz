@@ -8,23 +8,25 @@ import '../Style/moleculas/SecaoContato.scss';
 const SecaoContato = () => {
     return (
         <section id="contato">
-            <ContatoItem
-                icone={< SlScreenSmartphone />}
-                titulo={'celular'}
-                texto={'(11) 9.5681-1112'}
-            />
+            <article className="contato-container contato-animacao">
+                <ContatoItem
+                    icone={< SlScreenSmartphone />}
+                    titulo={'celular'}
+                    texto={'(11) 9.5681-1112'}
+                />
 
-            <ContatoItem
-                icone={< SiMinutemailer />}
-                titulo={'e-mail'}
-                texto={'johnygoncalvescruz@gmail.com'}
-            />
+                <ContatoItem
+                    icone={< SiMinutemailer />}
+                    titulo={'e-mail'}
+                    texto={'johnygoncalvescruz@gmail.com'}
+                />
 
-            <ContatoItem
-                icone={< SiGooglemaps />}
-                titulo={'Localização'}
-                texto={'bom jesus dos perdões - sp - brasil'}
-            />
+                <ContatoItem
+                    icone={< SiGooglemaps />}
+                    titulo={'Localização'}
+                    texto={'Bom Jesus dos Perdões - SP - Brasil'}
+                />
+            </article>
         </section>
     )
 }

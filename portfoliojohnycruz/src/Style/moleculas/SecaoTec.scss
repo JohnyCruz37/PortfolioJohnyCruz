@@ -4,10 +4,11 @@
 #tecnologia {
     margin: 1em 0;
     .tecnologia-cards{
-        border: 1px solid;
         @include mixins.center();
         @include mixins.flexRow();
-        padding: .5em 0;
+        @include mixins.fundoClaro();
+        border-radius: .5em;
+        padding: 1em 0;
         gap: 1.5em;
 
     }

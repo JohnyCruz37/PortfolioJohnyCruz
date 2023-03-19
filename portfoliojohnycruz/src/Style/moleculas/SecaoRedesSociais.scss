@@ -8,8 +8,7 @@
 
     .social-link{
         @include mixins.center();
-        border-radius: 5px;
-        background-color: #ddd;
+        @include mixins.fundoClaro();
 
         padding: .6em;
         font-size: 1.3em;

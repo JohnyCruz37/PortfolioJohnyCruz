@@ -2,8 +2,23 @@
 @use '../variaveis.scss';
 
 #main-container {
-    border: 1px solid;
-    border-radius: .5em;
+    @include mixins.fundo();
     padding: 3rem;
     flex: 2 1 0;
+}
+
+.main-animacao{
+    animation: entradaMain 3.5s ease;
+}
+
+@keyframes entradaMain {
+    0% {
+        opacity: 0;
+        transform: translateX(10em);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }

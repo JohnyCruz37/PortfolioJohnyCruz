@@ -2,64 +2,86 @@
 @use '../variaveis.scss';
 
 .card-tec {
-    border: 1px solid green;
-    border-radius: .5em;
+    @include mixins.fundo();
     width: calc(variaveis.$col * 5.5);
     padding: .5em;
 
     display: flex;
 
-    .card-tec-icone{
+    transition: .5s;
+
+    .card-tec-icone {
         @include mixins.center();
 
         i {
             @include mixins.center();
 
-            svg{
+            svg {
                 font-size: 4em;
-            } 
+            }
         }
 
-        #html{
-            svg{
+        #html {
+            svg {
                 color: #e44d26;
             }
         }
-        #css{
-            svg{
+
+        #css {
+            svg {
                 color: #1572b6;
             }
         }
-        #js{
-            svg{
+
+        #js {
+            svg {
                 color: #f0db4f;
             }
         }
-        #bt{
-            svg{
+
+        #bt {
+            svg {
                 color: #7811f2;
             }
         }
-        #react{
-            svg{
+
+        #react {
+            svg {
                 color: #00d1f7;
             }
         }
-        #git{
-            svg{
+
+        #git {
+            svg {
                 color: #e94e31;
             }
         }
     }
 
-    .card-tec-texto{
+    .card-tec-texto {
         h3 {
 
             text-transform: uppercase;
         }
     }
+}
 
+.card-tec:hover {
+    transform: scale(1.5);
+}
 
+.card-animacao {
+    animation: entradaCard 4s ease-out;
+}
 
+@keyframes entradaCard {
+    0% {
+        opacity: 0;
+        transform: translateX(18em);
+    }
 
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }

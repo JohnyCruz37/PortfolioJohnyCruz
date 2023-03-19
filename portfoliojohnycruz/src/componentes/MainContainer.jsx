@@ -7,7 +7,7 @@ import '../Style/componentes/MainContainer.scss'
 
 const MainContainer = () => {
     return (
-        <main id='main-container'>
+        <main id='main-container' className='main-animacao'>
             <SecaoSobre />
             <SecaoTec />
             <SecaoProjetos />

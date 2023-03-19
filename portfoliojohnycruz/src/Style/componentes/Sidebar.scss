@@ -2,8 +2,7 @@
 @use '../variaveis.scss';
 
 #aside {
-    border: 1px solid;
-    border-radius: .5em;
+    @include mixins.fundo();
     margin-top: calc(variaveis.$col / 2);
 
     flex: 1 1 0;
@@ -15,25 +14,68 @@
 
     text-align: center;
 
-    figure{
-        position: absolute;
+    figure {
         max-width: 60%;
         margin-top: -8em;
 
-        img{
+        position: absolute;
+
+        @media (max-width:variaveis.$viewport){
+            margin-top: -2em;
+        }
+
+        img {
+            border: 5px solid #eee;
+            border-radius: 20%;
             width: 100%;
             height: auto;
-            border-radius: 20%;
+            box-shadow: variaveis.$shadow;
         }
     }
+
     #cargo {
         border-radius: 5px;
-        background-color: #ddd;
+        background-color: #ccc;
         width: 60%;
-        margin-top: 13em;
+        margin-top: 12em;
         padding: .8em 1.2em;
 
         text-align: center;
         text-transform: capitalize;
+
+        @media (max-width:variaveis.$viewport){
+            margin-top: 20em;
+        }
+    }
+    @media (max-width:variaveis.$viewport){
+        .btn{
+            margin-top: -1em;
+            margin-bottom: 1em;
+         }
+    }
+    
+}
+
+
+
+
+// ANIMAÇÕES DE ENTRADA
+.aside-animacao{
+    animation: entradaAside 2.5s ease;
+}
+
+.figure-animacao{
+    animation: entradaAside 3s ease;
+}
+
+@keyframes entradaAside {
+    0% {
+        opacity: 0;
+        transform: translateX(-8em);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
     }
 }

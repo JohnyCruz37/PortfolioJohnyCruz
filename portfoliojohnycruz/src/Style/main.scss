@@ -6,14 +6,26 @@
 
 h1 {
     @include mixins.font('h1', 4em, capitalize);
+
+    @media (max-width:variaveis.$viewport){
+        font-size: 3em;
+    }
 }
 
 h2 {
     @include mixins.font('subtitulo', 2em, capitalize);
+
+    @media (max-width:variaveis.$viewport){
+        font-size: 1.5em;
+    }
 }
 
 h3 {
     @include mixins.font('subtitulo', 1em, none);
+
+    @media (max-width:variaveis.$viewport){
+        font-size: .9em;
+    }
 }
 
 h6 {
@@ -34,15 +46,13 @@ main{
     margin-top: calc(variaveis.$col / 2);
 }
 
-button{
-    border-radius: 3em;
-    padding: 1em 1.2em;
-    text-decoration: none;
-    transition: .3s;
-}
-
 
 // IDENTAÇÃO DO INÍCO DO PARÁGRAFO
 #sobre p, #tecnologia p, #projetos p{
     text-indent: 1em;
+
+    @media (max-width:variaveis.$viewport){
+        text-indent: 0;
+    }
 } 
+

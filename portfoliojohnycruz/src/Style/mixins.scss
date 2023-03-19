@@ -1,19 +1,30 @@
 @use 'variaveis';
 
-@mixin font($font, $tamanho, $transform){
+@mixin font($font, $tamanho, $transform) {
     font-family: $font;
     font-size: $tamanho;
-    text-transform: $transform;  
+    text-transform: $transform;
 }
 
-@mixin flexRow(){
-    display:  flex;
+@mixin flexRow() {
+    display: flex;
     flex-flow: row wrap;
 }
 
-@mixin center(){
+@mixin center() {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+@mixin fundo() {
+    box-shadow: variaveis.$shadow;
+    background-color: #ddd;
+    border-radius: .5em;
+}
+
+@mixin fundoClaro(){
+    box-shadow: variaveis.$shadowInterno;
+    background-color: #eee;
+    border-radius: .5em;
+}

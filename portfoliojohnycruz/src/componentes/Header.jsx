@@ -4,7 +4,7 @@ import '../Style/componentes/Header.scss'
 
 const Header = () => {
     return(
-        <header id='header'>
+        <header id='header' className='header-animacao'>
             <h1>johny Cruz</h1>
         </header>
     )

@@ -1,10 +1,10 @@
 @use '../mixins.scss';
 @use '../variaveis.scss';
 
-#contato{
+#contato {
     @include mixins.center();
-    background-color: #ddd;
-    border-radius: 5px;
+    @include mixins.fundoClaro();
+    width: 95%;
 
     margin-bottom: 2em;
     padding: 1em;
@@ -12,4 +12,26 @@
     flex-direction: column;
 
     text-align: left;
+
+    .contato-container {
+        @include mixins.fundo();
+        @include mixins.flexRow();
+        padding: .5em;
+    }
+}
+
+.contato-animacao{
+    animation: entradaContato 3s ease;
+}
+
+@keyframes entradaContato {
+    0% {
+        opacity: 0;
+        transform: translateX(-8em);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }

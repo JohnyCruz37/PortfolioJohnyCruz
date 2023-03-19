@@ -11,5 +11,10 @@
         padding: 1em 0;
         gap: 1.5em;
 
+        @media (max-width:variaveis.$viewport){
+            flex-direction: column;
+            padding: 1em;
+        }
+
     }
 }

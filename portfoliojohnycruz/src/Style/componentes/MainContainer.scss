@@ -5,6 +5,10 @@
     @include mixins.fundo();
     padding: 3rem;
     flex: 2 1 0;
+
+    @media (max-width:variaveis.$viewport){
+       padding: 1em;
+    }
 }
 
 .main-animacao{

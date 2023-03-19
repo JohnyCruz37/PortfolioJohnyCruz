@@ -1,9 +1,16 @@
-.titulo-secao{
+@use '../mixins.scss';
+@use '../variaveis.scss';
+
+.titulo-secao {
     display: flex;
     align-items: baseline;
     width: 100%;
 
-    .titulo-detalhe{
+    @media (max-width:variaveis.$viewport) {
+        justify-content: flex-start;
+    }
+
+    .titulo-detalhe {
         width: 25%;
         margin-bottom: 1em;
 
@@ -11,23 +18,33 @@
         flex-flow: row nowrap;
         justify-content: space-around;
         align-items: baseline;
-    
-        .circulo{
+
+        @media (max-width:variaveis.$viewport) {
+            margin-left: .5em;
+            gap: .5em
+        }
+
+        .circulo {
             color: green;
         }
-        #c2{
+
+        #c2 {
             font-size: 14px;
         }
-        #c3{
+
+        #c3 {
             font-size: 13px;
         }
-        #c4{
+
+        #c4 {
             font-size: 12px;
         }
-        #c5{
+
+        #c5 {
             font-size: 11px;
         }
-        #c6{
+
+        #c6 {
             font-size: 10px;
         }
     }

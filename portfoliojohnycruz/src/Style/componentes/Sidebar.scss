@@ -20,7 +20,7 @@
 
         position: absolute;
 
-        @media (max-width:variaveis.$viewport){
+        @media (max-width:variaveis.$viewport) {
             margin-top: -2em;
         }
 
@@ -37,34 +37,35 @@
         border-radius: 5px;
         background-color: #ccc;
         width: 60%;
-        margin-top: 12em;
+        margin-top: 30vh;
         padding: .8em 1.2em;
 
         text-align: center;
         text-transform: capitalize;
 
-        @media (max-width:variaveis.$viewport){
+        @media (max-width:variaveis.$viewport) {
             margin-top: 20em;
         }
     }
-    @media (max-width:variaveis.$viewport){
-        .btn{
+
+    @media (max-width:variaveis.$viewport) {
+        .btn {
             margin-top: -1em;
             margin-bottom: 1em;
-         }
+        }
     }
-    
+
 }
 
 
 
 
 // ANIMAÇÕES DE ENTRADA
-.aside-animacao{
+.aside-animacao {
     animation: entradaAside 2.5s ease;
 }
 
-.figure-animacao{
+.figure-animacao {
     animation: entradaAside 3s ease;
 }
 

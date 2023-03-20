@@ -7,4 +7,13 @@
         padding: .5em;
         margin-bottom: 1em;
     }
+    .projetos-cards{
+        @include mixins.center();
+        @include mixins.flexRow();
+        @include mixins.fundoClaro();
+        width: 100%;
+        margin-bottom: 1em;
+        padding: 1em 0;
+        gap: 1.5em;
+    }
 }

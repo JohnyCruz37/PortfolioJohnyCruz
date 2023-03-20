@@ -1,5 +1,5 @@
 import React from 'react';
-import { DiHtml5, DiCss3, DiBootstrap, DiJavascript, DiReact, DiGit } from 'react-icons/di';
+import { DiHtml5, DiCss3, DiBootstrap, DiJavascript, DiReact, DiGit, DiSass } from 'react-icons/di';
 
 import TituloSecao from '../atomo/TituloSecao';
 import Card from './Cards';
@@ -18,6 +18,12 @@ const tecnologiasLista = [
         nome: 'css3',
         icone: <DiCss3 />,
         texto: 'Com ela sou capaz de dar vida aos elementos do HTML. Adicionando cores, formatos, fontes, animações e efeitos incríveis.'
+    },
+    {
+        id: 'sass',
+        nome: 'sass',
+        icone: <DiSass />,
+        texto: 'Pré processador CSS. Muito eficiente para desenvolver o CSS de forma mais estruturada e ajudando na leitura do código.'
     },
     {
         id: 'js',

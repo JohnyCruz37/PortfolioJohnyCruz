@@ -1,5 +1,5 @@
 import React from 'react';
-import { DiHtml5, DiCss3, DiBootstrap, DiJavascript, DiReact, DiGit, DiSass } from 'react-icons/di';
+import { DiHtml5, DiCss3, DiBootstrap, DiJavascript, DiReact, DiGit, DiSass, DiGithub } from 'react-icons/di';
 
 import TituloSecao from '../atomo/TituloSecao';
 import Card from './Cards';
@@ -48,6 +48,12 @@ const tecnologiasLista = [
         nome: 'git',
         icone: <DiGit />,
         texto: 'Trabalhar com versões de um mesmo projeto e poder recuperar etapas anteriores.'
+    },
+    {
+        id: 'github',
+        nome: 'github',
+        icone: <DiGithub />,
+        texto: 'Tecnologia essencial para trabalhar com equipes remotas num mesmo projeto.'
     }
 ]
 

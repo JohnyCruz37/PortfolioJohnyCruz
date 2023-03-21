@@ -6,6 +6,8 @@ import '../Style/componentes/Sidebar.scss'
 import perfil from '../img/perfil.jpg'
 import Botao from '../atomo/botao';
 
+import curriculo from '../arquivos/Programador-Johny Gonçalves da Cruz.pdf'
+
 const Aside = () => {
     return (
         <aside id='aside' className='aside-animacao'>
@@ -16,7 +18,10 @@ const Aside = () => {
             <SecaoRedesSociais />
             <SecaoContato />
 
-            <Botao texto={'download currículo'} />
+            <Botao 
+                texto={'download currículo'} 
+                link={curriculo}
+            />
         </aside>
 
     )
